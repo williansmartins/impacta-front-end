@@ -118,7 +118,6 @@ switch (new Date().getDay()) {
 console.info(day);
 
 //==================== ESTRUTURA DE CONTROLE - LOOPS
-var lista = ['coca-cola', 'conduite', 'fio', 'fita isolante', 'luminarias'];
 var contador = 11;
 while(contador < 10){
 	console.info("Vai danada1!" + contador);
@@ -136,6 +135,27 @@ for(var contador = 0; contador < 10; contador++){
 }
 
 //forEach
+var lista = ['coca-cola', 'conduite', 'fio', 'fita isolante', 'luminarias'];
+
+//comum
 for(produto in lista){
 	console.info("nao esquecer de comprar: " + lista[produto]);
 }
+console.info("-----");
+//break
+for(produto in lista){
+	console.info("nao esquecer de comprar: " + lista[produto]);
+	if(lista[produto]=="fio"){
+		break;
+	}
+}
+
+console.info("-----");
+//break
+for(produto in lista){
+	if(lista[produto]=="fio" || lista[produto]=="coca-cola"){
+		continue;
+	}
+	console.info("nao esquecer de comprar: " + lista[produto]);
+}
+console.info("-----");
