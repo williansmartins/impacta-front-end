@@ -159,3 +159,19 @@ for(produto in lista){
 	console.info("nao esquecer de comprar: " + lista[produto]);
 }
 console.info("-----");
+
+//==================== ESTRUTURA DE CONTROLE - TRY/CATCH
+try{
+	var idade = converterParaInteiro("01111");
+	console.info(idade);
+}catch(e){
+	console.info("ops: " + e);
+}
+
+function converterParaInteiro(entrada){
+	if(isNaN(parseInt(entrada))){
+		throw "erro ao converter entrada";
+	}else{
+		return parseInt(entrada);
+	}
+}
