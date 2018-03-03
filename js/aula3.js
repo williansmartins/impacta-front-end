@@ -87,6 +87,8 @@ if(categoria=="infantil"){
 }
 
 //==================== ESTRUTURA DE CONTROLE - SWITCH CASE
+var day;
+
 switch (new Date().getDay()) {
     case 0:
         day = "Sunday";
@@ -108,4 +110,9 @@ switch (new Date().getDay()) {
         break;
     case 6:
         day = "Saturday";
+        break;
+    default:
+    	day = "OPAAAAAAA";
 }
+
+console.info(day);
