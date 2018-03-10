@@ -6,8 +6,10 @@ function popularTabela(response){
 
 		var conteudo = `
 			<tr>
-				<td>`+response[i].texto3+`</td>
-				<td>`+i+`</td>
+				<td>`+response[i].id+`</td>
+				<td>`+response[i].descricao+`</td>
+				<td>`+response[i].url+`</td>
+				<td>????</td>
 			</tr>`;
 		$("#tabela").append(conteudo);
 	}
