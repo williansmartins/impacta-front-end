@@ -10,8 +10,8 @@ $(document).ready(function(){
 	for (var i = 1; i <= 5; i++) {
 		var conteudo = `
 			<tr>
-				<td>coluna1</td>
-				<td>coluna2</td>
+				<td>`+i+`</td>
+				<td>`+i+`</td>
 			</tr>`;
 		$("#tabela").append(conteudo);
 	}
