@@ -20,15 +20,16 @@ $(document).ready(function(){
 	
 	//iniciar o loading
 	console.info("loading......")
-	//$(".loader").show()
+	$(".wrapper-loader").show();
+	$("#tabela").hide();
 
 	$.ajax({
 	  	url: "http://sistema.memphisnet.com.br/barramento/api/v1/banner",
 	}).done(function(response) {
 		popularTabela(response);
 
-		//finalizar o loading
-		console.info("loading ok")
+		$(".wrapper-loader").hide();
+		$("#tabela").show();
 	});
 
 });
