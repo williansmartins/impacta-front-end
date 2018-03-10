@@ -1,5 +1,3 @@
-
-
 function popularTabela(response){
 	for (var i = 0; i < response.length; i++) {
 		var conteudo = `
@@ -14,7 +12,6 @@ function popularTabela(response){
 		$("#tabela").append(conteudo);
 	}
 }
-
 
 $(document).ready(function(){
 
@@ -33,4 +30,3 @@ $(document).ready(function(){
 	});
 
 });
-

@@ -6,13 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/aula4.css">
 </head>
-<body ng-app="myApp" ng-controller="customersCtrl">
-	<div class="wrapper-loader">
+<body ng-app="myApp" ng-controller="bannerCtrl">
+	<div class="wrapper-loader" ng-show="false">
 		<div class="loader"></div>
 	</div>
 	<h1>AULA 4</h1>
-	<button class="btn btn-success" onclick="console.info( idade += 1)">buscar</button>
-	<div class="wrapper-table">
+	<button class="btn btn-success" ng-click="buscar()">buscar</button>
+	<div class="wrapper-table" ng-show="banners" >
 		<table class="table table-hover table-bordered table-striped" id="tabela">
 			<tr>
 				<th>id</th>
@@ -32,10 +32,12 @@
 			  </tr>
 		</table>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-	<script type="text/javascript" src="js/aula4-angular.js"></script>
+	<div class="scripts">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script type="text/javascript" src="js/aula4-angular.js"></script>
+	</div>
 </body>
 </html>
