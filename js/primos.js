@@ -1,4 +1,4 @@
-
+ 
 function verificarSeEhPrimo(entrada){
 	var variavel = entrada;
 	var verificador = 0;
