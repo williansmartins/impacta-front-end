@@ -175,3 +175,30 @@ function converterParaInteiro(entrada){
 		return parseInt(entrada);
 	}
 }
+console.info("-----");
+var pulo = 1;
+
+for (var i = 1; i <= 30; i++) {
+	document.write("<h6>" + i);
+	i += pulo;
+	pulo++;
+}
+
+//==================== FUNCOES
+//junior
+function funcaoJunior(){
+	console.info("mensagem1");
+	console.info("mensagem2");
+	console.info("mensagem3");
+}
+
+//pleno
+function funcaoPleno(valor){
+	console.info("mensagem1: " + valor);
+	console.info("mensagem2: " + valor);
+	console.info("mensagem3: " + valor);
+}
+//senior
+function funcaoSenior(valor1, valor2){
+	return valor1 + valor2;
+}
