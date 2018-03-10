@@ -9,7 +9,7 @@ function popularTabela(response){
 				<td>`+response[i].url+`</td>
 				<td>`+response[i].link+`</td>
 				<td>`+response[i].botao+`</td>
-				<td>`+response[i].created_at+`</td>
+				<td>`+$.datepicker.formatDate('mm/yy', new Date(response[i].created_at))+`</td>
 			</tr>`;
 		$("#tabela").append(conteudo);
 	}
@@ -17,6 +17,9 @@ function popularTabela(response){
 
 
 $(document).ready(function(){
+
+	var dt_to = $.datepicker.formatDate('dd/mm/yy', new Date());
+	console.info(dt_to);
 	
 	//iniciar o loading
 	console.info("loading......")
