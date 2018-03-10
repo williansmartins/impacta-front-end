@@ -18,8 +18,7 @@ function popularTabela(response){
 
 $(document).ready(function(){
 
-	var dt_to = $.datepicker.formatDate('dd/mm/yy', new Date());
-	console.info(dt_to);
+	alert("versao angular");
 	
 	//iniciar o loading
 	console.info("loading......")

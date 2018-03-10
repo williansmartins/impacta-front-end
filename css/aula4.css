@@ -1,4 +1,5 @@
 .wrapper-table{
+	display: none;
 	width: 800px;
 	margin: 0 auto;
 	margin-top: 20px;
