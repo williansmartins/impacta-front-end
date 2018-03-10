@@ -1,3 +1,7 @@
+body{
+	text-align: center;
+}
+
 .wrapper-table{
 	display: none;
 	width: 800px;

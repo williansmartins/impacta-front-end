@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/aula4.css">
 </head>
-<body style="text-align: center">
+<body ng-app="myApp" ng-controller="customersCtrl">
 	<div class="wrapper-loader">
 		<div class="loader"></div>
 	</div>
@@ -22,11 +22,20 @@
 				<th>link</th>
 				<th>criado em</th>
 			</tr>
+			<tr ng-repeat="banner in banners">
+			    <td>{{ banner.id }}</td>
+			    <td>{{ banner.descricao }}</td>
+			    <td>{{ banner.url }}</td>
+			    <td>{{ banner.botao }}</td>
+			    <td>{{ banner.link }}</td>
+			    <td>{{ banner.created_at }}</td>
+			  </tr>
 		</table>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/aula4.js"></script>
-	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="js/aula4-angular.js"></script>
 </body>
 </html>
