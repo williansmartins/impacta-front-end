@@ -7,8 +7,9 @@ function popularTabela(response){
 				<td>`+response[i].id+`</td>
 				<td>`+response[i].descricao+`</td>
 				<td>`+response[i].url+`</td>
-				<td>????</td>
-				<td>????</td>
+				<td>`+response[i].link+`</td>
+				<td>`+response[i].botao+`</td>
+				<td>`+response[i].created_at+`</td>
 			</tr>`;
 		$("#tabela").append(conteudo);
 	}
