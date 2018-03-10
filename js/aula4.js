@@ -18,12 +18,10 @@ function popularTabela(response){
 
 $(document).ready(function(){
 
-	alert("versao angular");
-	
 	//iniciar o loading
 	console.info("loading......")
 	$(".wrapper-loader").show();
-	$("#tabela").hide();
+	$(".wrapper-table").hide();
 
 	$.ajax({
 	  	url: "http://sistema.memphisnet.com.br/barramento/api/v1/banner",
@@ -31,7 +29,7 @@ $(document).ready(function(){
 		popularTabela(response);
 
 		$(".wrapper-loader").hide();
-		$("#tabela").show();
+		$(".wrapper-table").show();
 	});
 
 });
